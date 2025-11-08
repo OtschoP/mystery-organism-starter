@@ -13,10 +13,11 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
+// Factory function to create a specimen object
 
+function pAequorFactory(specimenNum, dna){
+  const obj = {specimenNum: specimenNum, dna: dna}
+  return obj;
+}
 
-
-
-
-
-
+console.log(pAequorFactory(1, mockUpStrand()));
