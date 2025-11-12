@@ -17,6 +17,7 @@ const mockUpStrand = () => {
 
 function pAequorFactory(specimenNum, dna){
   const obj = {specimenNum: specimenNum, dna: dna, mutate(){
+    const randIndex = Math.floor(Math.random() * this.dna.length);
     
   }}
   return obj;
